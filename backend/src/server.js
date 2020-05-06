@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost:27017/dropbox', { useNewUrlParser: true })
 const app = express()
 app.use(cors())
 
-const server = require(http).Server(app)
+const server = require('http').Server(app)
 const io = socket(server)
 
 io.on("connection", socket => {
