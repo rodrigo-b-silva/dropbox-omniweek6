@@ -1,4 +1,4 @@
-const port = process.env.port || 3000
+const port = process.env.port || 3333
 
 const express = require('express')
 const bodyParser = require('body-parser')

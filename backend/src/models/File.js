@@ -16,7 +16,7 @@ const File = new mongoose.Schema({
 })
 
 File.virtual("url").get(function(){
-    const URL = process.env.URL || 'http://localhost:3000';
+    const URL = process.env.URL || 'http://localhost:3333';
     return `${URL}/files/${encodeURIComponent(this.path)}`
 })
 
